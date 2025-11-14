@@ -66,8 +66,8 @@ function findFoodAllergens(foodName) {
             allergens_hierarchy: ["en: dairy milk"], 
             imageUrl: "assets/imgs/bananamilk.jfif"
         },
-            "kare-kare": {
-            product_name_en: "Kare-Kare",
+            "kare kare": {
+            product_name_en: "Kare Kare",
             allergens_hierarchy: ["en:peanuts", "en:shrimp paste"], 
             imageUrl: "assets/imgs/kare-kare.jpg"
         },
