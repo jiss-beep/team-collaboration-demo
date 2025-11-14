@@ -1,0 +1,104 @@
+
+.start {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.start:hover {
+    background-color: #45a049;
+}
+
+
+/* Container for the whole app inside the section */
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Search bar styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-input {
+    width: 70%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+/* Container for the results (image and text) */
+.results-area {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex; /* Aligns image and text side-by-side on larger screens */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* NEW: Image container styles */
+.food-image-container {
+    flex-basis: 300px; /* Base size */
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#food-image {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+/* Text results styles */
+.results-display {
+    flex-basis: 300px; /* Base size */
+    flex-grow: 2; /* Takes up more space */
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.results-display strong {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* Responsive layout for results */
+@media (max-width: 600px) {
+    .results-area {
+        flex-direction: column; /* Stack image and text on mobile */
+    }
+    .food-image-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .results-display {
+        text-align: center;
+    }
+}
