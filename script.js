@@ -55,6 +55,36 @@ function findFoodAllergens(foodName) {
             product_name_en: "Cappuccino",
             allergens_hierarchy: ["en:tree nuts", "en:milk", "en:soy"], // From pine nuts and cheese
             imageUrl: "assets/imgs/cappuccino.jfif"
+        },
+            "vitamilk": {
+            product_name_en: "Vitamilk",
+            allergens_hierarchy: ["en:soy", "en:milk"], 
+            imageUrl: "assets/imgs/Vitamilks.jpg"
+        },
+            "banana milk": {
+            product_name_en: "Banana Milk",
+            allergens_hierarchy: ["en: dairy milk"], 
+            imageUrl: "assets/imgs/bananamilk.jfif"
+        },
+            "kare-kare": {
+            product_name_en: "Kare-Kare",
+            allergens_hierarchy: ["en:peanuts", "en:shrimp paste"], 
+            imageUrl: "assets/imgs/kare-kare.jpg"
+        },
+            "garlic butter shrimp": {
+            product_name_en: "Garlic Butte Shrimp",
+            allergens_hierarchy: ["en:shrimp", "en:dairy"], 
+            imageUrl: "assets/imgs/garlicbuttershrimp.jpg"
+        },
+            "buko juice": {
+            product_name_en: "Buko Juice",
+            allergens_hierarchy: ["en:coconut", "en:dairy"],
+            imageUrl: "assets/imgs/bukojuice.jpg"
+        },
+            "bibingka": {
+            product_name_en: "Bibingka",
+            allergens_hierarchy: ["en:eggs", "en:dairy", "en:gluten"], 
+            imageUrl: "assets/imgs/bibingka.jpg"
         }
     };
 
