@@ -1,24 +1,25 @@
 # Safe Grub - Allergy Detection Web App
 Try it out! [SafeGrub](https://shiny-croissant-1456de.netlify.app/)
 ## Inspiration
-Food allergies are a significant concern for individuals who need to carefully monitor their diet. Reading and understanding food labels can be time-consuming and challenging, especially for people with visual impairments or those who struggle with ingredient analysis. Our team was motivated to develop an innovative solution to assist individuals in quickly identifying potential allergens in food products. Thus, we created Safe Grub, a web app that utilizes computer vision and natural language processing to detect allergies in food items.
-
+Food allergies are a significant concern for individuals who need to carefully monitor their diet. Reading and understanding long ingredient labels can be time-consuming and challenging. Safe Grub is designed to assist individuals in quickly identifying potential allergens by allowing them to paste or type ingredient lists for instant analysis.
 ## What it does
-Safe Grub utilizes computer vision and the Clarifai API to enable users to scan food wrappers using their webcam. The web app captures an image of the food item, detects the barcode using Clarifai's barcode reader AI model, and extracts the serial number. It then parses through a database of ingredients to identify any common allergens associated with the serial number. Finally, Safe Grub uses text-to-speech technology to read the list of ingredients aloud, ensuring accessibility for individuals with visual impairments.
+Safe Grub is now a text-based tool that checks any provided ingredient list against a comprehensive local database of common allergens.
 
+Text Input: Users paste an ingredient list (or any text) into a dedicated field.
+
+Local Analysis: The app instantly parses the text, normalizing and checking every term against defined lists for "The Big Eight" allergens.
+
+Instant Results: It provides a clear, immediate warning if any common allergens are detected.
 ## How we built it
-Safe Grub is built as a web application using HTML, CSS, and JavaScript. We utilized the following components and technologies:
-- **Webcam Access:** We accessed the user's webcam stream using the `navigator.mediaDevices.getUserMedia` API.
-- **Canvas:** We used the HTML elements to display the video feed and capture frames from the webcam.
-- **Clarifai API:** We integrated the Clarifai API to detect the barcode from the captured image and extract the serial number.
-- **Ingredient Database:** We created a database of common allergens and their associated serial numbers.
-- **Text-to-Speech:** We employed JavaScript's text-to-speech capabilities to read the list of ingredients aloud.
+Safe Grub is built as a single-page web application using HTML, CSS, and JavaScript. We utilized the following components:
+
+Local Database: All common allergens are stored in hardcoded JavaScript Sets for instant lookup speed.
+
+Text Parsing: Robust JavaScript functions handle unstructured text input, splitting ingredients by various delimiters (commas, parentheses, etc.) for accurate matching.
 
 ## Challenges we ran into
-During the development of Safe Grub, we encountered several challenges:
-- **Webcam Access:** Configuring the webcam access and capturing frames required understanding the `getUserMedia` API and dealing with cross-browser compatibility.
-- **Barcode Detection:** Integrating the Clarifai API and correctly extracting the barcode's serial number presented some complexities.
-- **Ingredient Parsing:** Building an efficient ingredient parsing algorithm to match the extracted serial number with the allergen database required careful consideration.
+During the development of Safe Grub, we encountered one challenge:
+- **Database Implementation:** We struggled to find a perfect database to store our food data for fetching and showing it to the users.
 
 ## Accomplishments that we're proud of
 Despite the challenges, our team achieved several milestones throughout the development process:
@@ -27,9 +28,15 @@ Despite the challenges, our team achieved several milestones throughout the deve
 - **Text-to-Speech Integration:** We implemented text-to-speech functionality, enabling Safe Grub to read the list of ingredients aloud, enhancing accessibility for visually impaired users.
 
 ## What we learned
-In this project, we gained knowledge on integrating multiple APIs and leveraging their combined functionality. Additionally, we recognized the significance of accessibility in website development, particularly in ensuring inclusivity for various user groups, such as the visually impaired.
+This iteration focused heavily on the challenges of natural language processing and pattern matching within unstructured text. We prioritized creating a parsing routine that is resilient to common variations and formatting found on real-world ingredient labels.
 
 ## What's next for Safe Grub
-We have a vision to expand Safe Grub's capabilities and incorporate additional features to make it an indispensable tool for individuals with food allergies. Here are some future enhancements we plan to implement:
-- **Real-time Ingredient Detection:** Utilizing natural language processing
-- **Accessibility:** Making it as accessible as possible through converting this web app to a mobile app. 
+Future enhancements could include:
+
+Custom Allergen Profiles: Allowing users to save and check against their specific allergies beyond the standard "Big Eight."
+
+Ingredient Highlighting: Visually highlighting the problematic ingredients directly in the input text area.
+
+Dietary & Religious Filters: Expanding analysis to flag ingredients unsuitable for specific religious practices (e.g., Halal, Kosher) or dietary choices (e.g., Vegan, Vegetarian).
+
+Medical Condition Checker: Adding custom profiles to detect ingredients that commonly trigger medical issues like GERD (Gastroesophageal Reflux Disease), IBS, or low-FODMAP diets.
