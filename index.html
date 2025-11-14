@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Studio landing page.">
+    <meta name="author" content="Devcrud">
+    <title>SafeGrub</title>
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/creative-studio.css">
+    <!-- Link to your styles -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+     
+    <!-- Page Header (Original) -->
+     <header class="header">
+        <div class="overlay">
+            <div class="header2">
+            <img src="assets/imgs/grubhub.jpg" alt="logo" />
+            </div>
+          
+        </div>      
+    </header>
+    <!-- End Of Page Header (Original) -->
+
+    
+    <!-- Box (Original) -->
+     <div class="box text-center">
+        <!-- ... your original box items ... -->
+        <div class="box-item">
+            <img src="https://d2dcafd8b62eqh.cloudfront.net/thrive-microsite/food.gif" width="185px" height="185px">            
+            <h6 class="box-title">Order Your Food</h6>
+            <p></p>
+        </div>
+        <div class="box-item">
+            <img src="https://cdn.edu.buncee.com/assets/9a210469014b057d19ab922397cf46d8/animation-education-magnifying-glass-042420.gif?timestamp=1587763956" width="185px" height="185px">
+            <h6 class="box-title">Look up your food</h6> 
+        <p></p>
+        </div>
+        <div class="box-item">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_fup2uejx.json"  background="transparent"  speed="1"  style="width: 230px; height: 157px;" hover loop  ></lottie-player>
+        <h6 class="box-title">We'll Find It</h6>
+        <p></p>
+        </div>
+        <div class="box-item">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_EY6Lg2udYI.json"  background="transparent"  speed="1"  style="width: 250px; height: 180px;" hover loop  ></lottie-player>
+            <h6 class="box-title">Understand Allergens</h6>
+            <p></p>
+        </div>
+    </div>
+    <!-- End of Box (Original) -->
+ 
+    <!-- About Section (MODIFIED for Search) -->
+    <section id="scan">
+        <h3 class="section-title text-center mb-6">Safe Food, Safe You!</h3>
+        <h6 class="section-title text-center mb-4">Look up your food, our website will give you information, and you can eat safely!</h6>
+        
+        <!-- START: New App Interface -->
+        <div class="app-container">
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="food-search-input" class="form-input" placeholder="Enter food stall or item...">
+                <button id="food-search-btn" class="start">Search</button>
+            </div>
+            
+            <!-- Results Area -->
+            <div class="results-area">
+                <!-- NEW: Image container -->
+                <div class="food-image-container">
+                    <img id="food-image" src="https://placehold.co/300x200/f0f0f0/ccc?text=Search+for+Food" alt="Food item">
+                </div>
+                
+                <!-- Text results -->
+                <div id="results-display" class="results-display">
+                    <p>Enter a food item to check its allergens.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- END: New App Interface -->
+    </section>
+    <!-- End of About Section -->
+
+    <!-- ... Your other original sections (Service, Team, etc.) ... -->
+     <!-- Service Section -->
+    <section id="read">
+        <div class="container">
+            <h5 class="section-title text-center mb-6">Did You Know?</h5> 
+            <div class="row">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_opjebefq.json"  background="transparent"  speed="1.5"  style="width: 285px; height: 250px;" hover loop  ></lottie-player>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-filter text-primary"></i></h2>
+                            <h6 class="card-title">The Big Eight</h6>
+                            <p>The "Big Eight" allergens account for most food allergies. In the United States, eight major food allergens are responsible for the majority of allergic reactions: milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, and soybeans. These allergens are required by law to be labeled on food packaging.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-paint-roller text-primary"></i></h2>
+                            <h6 class="card-title">Allergies vs Intolerances</h6>
+                            <p>Food allergies and intolerances are different. Food allergies involve the immune system and can cause a wide range of symptoms, including hives, swelling, difficulty breathing, and gastrointestinal issues. Food intolerances, on the other hand, typically involve the digestive system and result in symptoms like bloating, diarrhea, or stomach pain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-paint-roller text-primary"></i></h2>
+                            <h6 class="card-title">Longevity</h6>
+                            <p>Food allergies are not always lifelong. While some food allergies persist throughout life, others may be outgrown. The likelihood of outgrowing a food allergy depends on factors such as the allergen, the individual's age, and the severity of the allergy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End of Service Section -->
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h6 class="section-title mb-5 text-center">Meet The Team</h6>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/calvin.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calvin Macatangay</h5>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/calvin-macatangay-883a72391/"><img src="assets/imgs/li.jpg" width="30" height="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/jep.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Jefferson Hilis</h5>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/jefferson-hilis-89ab15391/"><img src="assets/imgs/li.jpg" width="30" height="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/jamail.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Jamail Aco-on</h5>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/jamail-aco-on-846369396/"><img src="assets/imgs/li.jpg" width="30" height="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/jecelmhey.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Jecelmhey Bagaoisan</h5>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/jecelmhey-bagaoisan-435a17398/"><img src="assets/imgs/li.jpg" width="30" height="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Team Section -->
+     
+     <!-- Your original toaster animation -->
+     <div class="wrapper">
+        <!-- ... toaster HTML ... -->
+     </div>
+
+     <!-- SCRIPT link. This replaces the old script.js content -->
+     <script src="script.js"></script>
+</body>
+</html>
